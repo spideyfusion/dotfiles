@@ -5,10 +5,27 @@
 - clean: ['~']
 
 - link:
-    ~/.profile: profile
-    ~/.bashrc: bashrc
-    ~/.bash_logout: bash_logout
-    ~/.gitconfig: gitconfig
+    ~/.profile:
+        force: true
+        relink: true
+        path: profile
+    ~/.bashrc:
+        force: true
+        relink: true
+        path: bashrc
+    ~/.bash_logout:
+        force: true
+        relink: true
+        path: bash_logout
+    ~/.gitconfig:
+        force: true
+        relink: true
+        path: gitconfig
+    ~/.themes/Flat-Plat:
+        create: true
+        force: true
+        relink: true
+        path: Flat-Plat
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
