@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+git submodule update --init --remote &&
+
+# Only a hipster would decide not to use echo...
+printf "Successfully updated all the repository dependencies! \o/\n"
