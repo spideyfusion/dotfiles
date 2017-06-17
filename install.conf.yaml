@@ -21,11 +21,6 @@
         force: true
         relink: true
         path: gitconfig
-    ~/.themes/Flat-Plat:
-        create: true
-        force: true
-        relink: true
-        path: Flat-Plat
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
