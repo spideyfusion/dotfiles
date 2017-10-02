@@ -24,5 +24,6 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
+    - [powerline-fonts/install.sh, Installing terminal fonts]
     - [go get -u github.com/justjanne/powerline-go, Installing command prompt]
     - [dconf load /org/gnome/terminal/legacy/ < dconf/terminal, Restoring terminal settings]
