@@ -5,10 +5,6 @@
 - clean: ['~']
 
 - link:
-    ~/.profile:
-        force: true
-        relink: true
-        path: profile
     ~/.bashrc:
         force: true
         relink: true
@@ -17,6 +13,10 @@
         force: true
         relink: true
         path: bash_logout
+    ~/.bash_profile:
+        force: true
+        relink: true
+        path: bash_profile
     ~/.gitconfig:
         force: true
         relink: true
@@ -24,4 +24,5 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
+    - [go get -u github.com/justjanne/powerline-go, Installing command prompt]
     - [dconf load /org/gnome/terminal/legacy/ < dconf/terminal, Restoring terminal settings]

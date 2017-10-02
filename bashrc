@@ -119,5 +119,10 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Power the shell!
-source $DOTFILES_LOCATION/bash-powerline/bash-powerline.sh
+function _update_ps1() {
+    PS1="$($GOBIN/powerline-go -error $?)"
+}
+
+if [ "$TERM" != "linux" ]; then
+    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
