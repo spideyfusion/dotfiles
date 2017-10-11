@@ -6,4 +6,4 @@
 	url = https://github.com/seebi/dircolors-solarized
 [submodule "powerline-fonts"]
 	path = powerline-fonts
-	url = git@github.com:powerline/fonts.git
+	url = https://github.com/powerline/fonts
